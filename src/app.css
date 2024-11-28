@@ -1,0 +1,349 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--swiper-navigation-color: #5d5656 !important;
+	--swiper-theme-color: #5d5656 !important;
+}
+
+.swiper-wrapper {
+	align-items: center; /* add this will all relevant prefixes */
+}
+
+.swiper-slide {
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+.swiper-pagination {
+	position: relative !
+}
+
+.divider {
+	width: 7rem !important;
+	height: 5rem !important;
+	margin: 1rem auto !important;
+}
+
+.bg-smokewhite {
+	background-color: whitesmoke;
+}
+
+.memory-card {
+	border: 1px solid whitesmoke;
+	box-shadow: none;
+	background-color: white;
+}
+
+.movie {
+	height: 0;
+	padding-bottom: 150%;
+	/* padding-top: 1.5625rem; */
+	position: relative;
+	overflow: hidden;
+}
+
+.movie iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+
+/************************** 방명록 **************************/
+/* .guestbook {
+	width: 25rem;
+	margin: auto;
+} */
+
+/* .guestbook h2 {
+	margin-bottom: 2rem;
+} */
+
+.guestbook {
+	max-width: 34rem;
+}
+
+.guestbook .header {
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.guestbook .sub-header {
+	padding: 0 1.25rem;
+	margin-top: -3.7rem;
+	color: rgb(102, 102, 102);	
+}
+
+.guestbook .sub-header p:first-child {
+	float: left;
+}
+
+.guestbook .sub-header p:last-child {
+	float: right;
+}
+
+.guestbook .sub-header p {
+	margin-bottom: 1.25rem;
+}
+
+.guestbook .body {
+	position: relative;
+	padding: 0 1.25rem;
+	margin: 1.25rem 0;
+}
+
+.guestbook .body .talk {
+	font-size: 0.875rem;
+	font-family: sans-serif;
+	margin-bottom: 0.6rem;
+}
+
+.guestbook svg {
+	float: left;
+	width: 2.4rem;
+	height: 2.4rem;
+	color: white;
+	padding: 0.5rem;
+	border-radius: 1.25rem;
+}
+
+svg.c1 {
+	background: #F7C8D3;
+}
+svg.c2 {
+	background: #E5D3B3;
+}
+svg.c3 {
+	background: #C8D3F7;
+}
+svg.c4 {
+	background: #FED0B0;
+}
+svg.c5 {
+	background: #ABDAAB;
+}
+svg.c6 {
+	background: #ECC8F7;
+}
+
+.guestbook .body .talk.bride svg {
+	float: right;
+}
+
+.guestbook .body .talk > div {
+	margin-left: 2.75rem;
+	text-align: left;
+	line-height: 1.3;
+}
+
+.guestbook .body .talk.bride > div {
+	margin-right: 2.75rem;
+	text-align: right;
+}
+
+.guestbook .body .talk > div .edit {
+	font-size: 0.9em;
+	color: rgb(153, 153, 153);
+	text-decoration: underline;
+	display: none;
+}
+
+.guestbook .body .talk.selected > div .edit {
+	display: inline-block;
+}
+
+.guestbook .body .talk > div div.bubble-info-wrap {
+	display: flex;
+	flex-direction: row;
+}
+
+.guestbook .body .talk.bride > div div.bubble-info-wrap {
+	flex-direction: row-reverse;
+}
+
+.guestbook .body .talk > div div.bubble-info-wrap p {
+	white-space: pre-wrap;
+	text-align: left;
+	word-break: break-all;
+	overflow-wrap: break-word;
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+	margin: 0.25rem 0.1875rem 0 0;
+	border-radius: 0.25rem 1.25rem 1.25rem;
+	background: rgb(238, 238, 238);
+}
+
+.guestbook .body .talk.bride > div div.bubble-info-wrap p {
+	margin: 0.25rem 0 0 0.1875rem;
+	border-radius: 1.25rem 0.25rem 1.25rem 1.25rem;
+}
+
+.guestbook .body .talk.selected > div div.bubble-info-wrap p {
+	background: rgb(221, 221, 221);
+}
+
+.guestbook .body .talk > div div.bubble-info-wrap small {
+	align-self: flex-end;
+	flex-shrink: 0;
+	color: rgb(153, 153, 153);
+	font-size: 0.6875rem;
+}
+
+.guestbook .btn {
+	margin: 1rem;
+	outline: none;
+	font-family: sans-serif;
+	width: calc(100% - 2.5rem);
+	max-width: 18.5rem;
+	padding: 1rem;
+	border: 0;
+	border-radius: 0.5rem;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	background: rgba(255, 136, 170, 0.9);
+	box-shadow: rgba(0, 0, 0, 0.16) 0 0.1875rem 0.375rem, rgba(0, 0, 0, 0.23) 0 0.1875rem 0.375rem;
+}
+
+/************************** 방명록 **************************/
+
+/************************** 방명록 입력 *********************/
+
+.guestbook .write {
+	display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.guestbook .write.none {
+	display: none !important;
+}
+
+.guestbook .write .screen {
+	position: relative;
+    width: 100%;
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+
+.guestbook .write .screen .area {
+	position: relative;
+    width: calc(100% - 2.5rem);
+    max-width: 25rem;
+    padding: 1.25rem;
+    border-radius: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    text-align: start;
+    font-family: sans-serif;
+}
+
+.guestbook .write .screen .area .title {
+	margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.guestbook .write .screen .area .title span {
+	background: linear-gradient(0deg, transparent 33%, rgba(255, 136, 170, 0.3) 36%, rgba(255, 136, 170, 0.3) 66%, transparent 70%);
+}
+
+.guestbook .write .screen .area .comment {
+	margin: 1.5rem 0;
+    text-align: left;
+}
+
+.comment > div {
+	margin-left: 2.875rem;
+    text-align: left;
+}
+
+.comment input, .comment label, .comment div[contenteditable="true"] {
+	appearance: none;
+    transition: all 0.3s ease 0s;
+}
+
+.comment .editor {
+	font-family: sans-serif;
+    white-space: pre-wrap;
+    padding: 0.625rem 1rem;
+    border: none;
+    line-height: 1.3;
+    border-radius: 4px 20px 20px;
+    background: rgb(238, 238, 238);
+    outline: none;
+    display: inline-block;
+    text-align: start;
+}
+
+.comment .editor:not(:first-child) {
+	margin: 0.375rem 0 0;
+}
+
+.comment .editor:first-child:empty::before {
+	content: "이름";
+    color: grey;
+}
+
+.comment .editor:not(:first-child):not(:last-child):empty::before {
+	content: "내용을 입력해주세요.";
+    color: grey;
+}
+
+.comment .editor:last-child:empty::before {
+	content: "암호를 입력해주세요.";
+    color: grey;
+}
+
+.guestbook .write .screen .area .write-btn {
+	display: block;
+    width: 90%;
+    height: 2.75rem;
+    border-radius: 8px;
+    border: 0;
+    margin: 1.5rem auto 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    background: rgba(255, 136, 170, 0.7);
+}
+
+.guestbook .write .screen .area .write-btn:disabled {
+	background: lightgrey;
+}
+/************************** 방명록 입력 *********************/
